@@ -1,0 +1,6 @@
+{
+  "name": "CoverCraft",
+  "description": "Professional cover and editorial design studio for creating customizable book covers, social media posts, and business cards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

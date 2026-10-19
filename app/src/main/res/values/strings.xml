@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CoverCraft</string>
+    <string name="title_library">Template Library</string>
+    <string name="title_editor">Cover Studio</string>
+    <string name="title_saved">My Designs</string>
+    <string name="category_book">Book &amp; Editorial Covers</string>
+    <string name="category_social">Social Media Posts</string>
+    <string name="category_card">Business Cards</string>
+    <string name="action_customize">Customize</string>
+    <string name="action_export">Export Design</string>
+    <string name="action_save">Save Project</string>
+    <string name="action_share">Share</string>
+    <string name="action_new">Create Blank</string>
+</resources>
