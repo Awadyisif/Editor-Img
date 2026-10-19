@@ -161,7 +161,7 @@ fun SavedDesignsScreen(
                             scope.launch {
                                 val res = ExportUtils.saveWithCustomOptions(context, item.designData, ExportOptions())
                                 if (res.isSuccess) {
-                                    Toast.makeText(context, "Saved to Pictures/CoverCraft!", Toast.LENGTH_SHORT).show()
+                                    Toast.makeText(context, "Saved to Pictures/CoverStudio!", Toast.LENGTH_SHORT).show()
                                 }
                             }
                         },

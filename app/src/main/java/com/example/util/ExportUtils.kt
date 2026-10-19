@@ -310,7 +310,7 @@ object ExportUtils {
             val bitmap = renderDesignBitmap(context, data, options.resolution.scaleFactor)
             val ext = options.format.extension
             val mimeType = options.format.mimeType
-            val filename = "CoverCraft_${System.currentTimeMillis()}.$ext"
+            val filename = "CoverStudio_${System.currentTimeMillis()}.$ext"
 
             val compressFormat = if (options.format == ExportFormat.PNG) {
                 Bitmap.CompressFormat.PNG
@@ -325,7 +325,7 @@ object ExportUtils {
                 val contentValues = ContentValues().apply {
                     put(MediaStore.MediaColumns.DISPLAY_NAME, filename)
                     put(MediaStore.MediaColumns.MIME_TYPE, mimeType)
-                    put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_PICTURES + "/CoverCraft")
+                    put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_PICTURES + "/CoverStudio")
                     put(MediaStore.Images.Media.IS_PENDING, 1)
                 }
                 val resolver = context.contentResolver
@@ -334,7 +334,7 @@ object ExportUtils {
                     outputStream = resolver.openOutputStream(imageUri)
                 }
             } else {
-                val imagesDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).toString() + "/CoverCraft"
+                val imagesDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).toString() + "/CoverStudio"
                 val file = File(imagesDir)
                 if (!file.exists()) file.mkdirs()
                 val imageFile = File(imagesDir, filename)
@@ -392,7 +392,7 @@ object ExportUtils {
                 type = options.format.mimeType
                 putExtra(Intent.EXTRA_STREAM, contentUri)
                 putExtra(Intent.EXTRA_SUBJECT, data.title)
-                putExtra(Intent.EXTRA_TEXT, "${data.title} - Created with CoverCraft Studio")
+                putExtra(Intent.EXTRA_TEXT, "${data.title} - Created with Cover Studio")
                 addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
             }
 

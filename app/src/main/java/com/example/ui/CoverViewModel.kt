@@ -56,7 +56,7 @@ class CoverViewModel(application: Application) : AndroidViewModel(application) {
             title = "NEW DESIGN",
             subtitle = "Modern Minimalist Composition",
             metaTags = listOf("DESIGN", "2026", "STUDIO"),
-            badgeText = "COVERCRAFT",
+            badgeText = "COVER STUDIO",
             authorName = "Your Name",
             secondaryInfo = "VOL. 01 • EDITION",
             backgroundColorHex = "#FFFFFF",

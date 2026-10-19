@@ -22,6 +22,6 @@ dependencyResolutionManagement {
   }
 }
 
-rootProject.name = "CoverCraft"
+rootProject.name = "Cover Studio"
 
 include(":app")
